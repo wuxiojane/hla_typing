@@ -1,5 +1,5 @@
 # -*- coding: utf-8 -*-
-# !/Juno2/project/ttgao/software/anaconda3/bin/python
+# !/usr/bin/python3
 
 # @Date    : 2021-12-07
 # @Author  : TTG
@@ -88,7 +88,7 @@ class Params:
         if args.hlahdDir:
             self.HLAHDDIR = args.hlahdDir
         else:
-            self.HLAHDDIR = '/Juno/software/hlahd.1.4.0/'  
+            self.HLAHDDIR = '/software/hlahd.1.4.0/'  
         if args.outputPath:
             self.OUTPUTPATH = args.outputPath
 
