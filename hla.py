@@ -52,8 +52,8 @@ class Params:
                                  help='threads number')
         self.parser.add_argument('-D', '--hlahdDir',
                                  dest='hlahdDir',
-                                 default='/Juno/software/hlahd.1.4.0/',
-                                 help='hlahd DirPath')
+                                 default=None,
+                                 help='hlahd DirPath,such as \"/home/software/hlahd.1.4.0/\"')
         self.parser.add_argument('-O', '--outputPath',
                                  dest='outputPath',
                                  default='./',
@@ -88,7 +88,7 @@ class Params:
         if args.hlahdDir:
             self.HLAHDDIR = args.hlahdDir
         else:
-            self.HLAHDDIR = '/software/hlahd.1.4.0/'  
+            self.HLAHDDIR = '/home/software/hlahd.1.4.0/'  
         if args.outputPath:
             self.OUTPUTPATH = args.outputPath
 
